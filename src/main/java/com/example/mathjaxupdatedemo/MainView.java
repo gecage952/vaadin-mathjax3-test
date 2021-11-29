@@ -40,14 +40,14 @@ public class MainView extends VerticalLayout {
 				}
 			}
 		});
-//		loadJsButton.addClickListener((e) -> {
-//			final UI ui = UI.getCurrent();
-//			if (ui != null) {
-//				ui.getPage().executeJs("console.log('Running MathJax');");
-//				ui.getPage().executeJs("MathJax.typeset(null);");
-//				
-//			}
-//		});
+		loadJsButton.addClickListener((e) -> {
+			final UI ui = UI.getCurrent();
+			if (ui != null) {
+				ui.getPage().executeJs("console.log('Running MathJax');");
+				ui.getPage().executeJs("MathJax.typeset(null);");
+				
+			}
+		});
 		content.add(loadJsButton);
 		add(content);
 	}
